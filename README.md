@@ -1,2 +1,2 @@
-# Button.css
+# Button CSS
 A css library for buttons.
