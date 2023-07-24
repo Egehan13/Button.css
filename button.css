@@ -482,6 +482,21 @@ Egehan Eren Gunes
 .rounded-fc:focus{
     border-radius:25px;
 }
+.rounded-paper{
+    border-radius: 0 0 25px;
+}
+.rounded-paper-hv{
+    border-radius:none;
+}
+.rounded-paper-hv:hover{
+    border-radius: 0 0 25px;
+}
+.rounded-paper-fc{
+    border-radius:none;
+}
+.rounded-paper-fc:focus{
+    border-radius: 0 0 25px;
+}
 .large{
     font-size:25px;
 }
