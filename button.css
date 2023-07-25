@@ -26,6 +26,90 @@ Egehan Eren Gunes
 .bg-blue{
     background:#5d96f0;
 }
+.bg-green-hv{
+    background:none;
+}
+.bg-green-hv:hover{
+    background:#5be37f;
+}
+.bg-green-fc{
+    background:none;
+}
+.bg-green-fc:focus{
+    background:#5be37f;
+}
+.bg-pink-hv{
+    background:none;
+}
+.bg-pink-hv:hover{
+    background:#ed6fc3;
+}
+.bg-pink-fc{
+    background:none;
+}
+.bg-pink-fc:focus{
+    background:#ed6fc3;
+}
+.bg-black-hv{
+    background:none;
+}
+.bg-black-hv:hover{
+    background:#15171c;
+}
+.bg-black-fc{
+    background:none;
+}
+.bg-black-fc:focus{
+    background:#15171c;
+}
+.bg-red-hv{
+    background:none;
+}
+.bg-red-hv:hover{
+    background:#ed634e;
+}
+.bg-red-fc{
+    background:none;
+}
+.bg-red-fc:focus{
+    background:#ed634e;
+}
+.bg-orange-hv{
+    background:none;
+}
+.bg-orange-hv:hover{
+    background:#e6a863;
+}
+.bg-orange-fc{
+    background:none;
+}
+.bg-orange-fc:focus{
+    background:#e6a863;
+}
+.bg-purple-hv{
+    background:none;
+}
+.bg-purple-hv:hover{
+    background:#7070e6;
+}
+.bg-purple-fc{
+    background:none;
+}
+.bg-purple-fc:focus{
+    background:#7070e6;
+}
+.bg-blue-hv{
+    background:none;
+}
+.bg-blue-hv:hover{
+    background:#5d96f0;
+}
+.bg-blue-fc{
+    background:none;
+}
+.bg-blue-fc:focus{
+    background:#5d96f0;
+}
 .col-pink{
     color:#ed6fc3;
 }
