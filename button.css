@@ -671,6 +671,229 @@ Egehan Eren Gunes
   animation: none;
   opacity: 1;
 }
+/* QuarkUI.css */
+
+/* Glittering Star Button */
+
+/* Glittering Star Button */
+.btn-glittering-star {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glittering-star::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #fff;
+  opacity: 0;
+  transform: rotate(45deg);
+  animation: glitterAnimation 1.5s ease-in-out infinite;
+}
+
+@keyframes glitterAnimation {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) scale(2);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) scale(1);
+  }
+}
+
+.btn-glittering-star:hover::after,
+.btn-glittering-star:focus::after {
+  animation: glitterAnimation 1.5s ease-in-out infinite;
+}
+/* QuarkUI.css */
+
+/* Raindrop Button */
+
+/* Raindrop Button */
+.btn-raindrop {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #00bfff;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-raindrop::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  animation: raindropAnimation 1s ease-in-out infinite;
+}
+
+@keyframes raindropAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.btn-raindrop:hover::after,
+.btn-raindrop:focus::after {
+  animation: raindropAnimation 1s ease-in-out infinite;
+}
+/* QuarkUI.css */
+
+/* Pulse Border Button */
+
+/* Pulse Border Button */
+.btn-pulse-border {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-pulse-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  opacity: 0;
+  transform: scale(1);
+  animation: pulseBorderAnimation 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseBorderAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.btn-pulse-border:hover::before,
+.btn-pulse-border:focus::before {
+  animation: pulseBorderAnimation 1.5s ease-in-out infinite;
+}
+/* QuarkUI.css */
+
+/* Rainbow Gradient Button */
+
+/* Rainbow Gradient Button */
+.btn-rainbow-gradient {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #8b00ff);
+  background-size: 600% 600%;
+  animation: rainbowGradientAnimation 8s ease-in-out infinite;
+}
+
+@keyframes rainbowGradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* QuarkUI.css */
+
+/* Liquid Button */
+
+/* Liquid Button */
+.btn-liquid {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #007bff;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-liquid::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: liquidAnimation 2s linear infinite;
+}
+
+@keyframes liquidAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.btn-liquid:hover::before,
+.btn-liquid:focus::before {
+  animation: liquidAnimation 2s linear infinite;
+}
 
 .bg-green{
     background:#5be37f;
