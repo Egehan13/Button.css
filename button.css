@@ -894,6 +894,117 @@ Egehan Eren Gunes
 .btn-liquid:focus::before {
   animation: liquidAnimation 2s linear infinite;
 }
+/* QuarkUI.css */
+
+/* Glassy Button */
+
+/* Glassy Button */
+.btn-glassy {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(0, 123, 255, 0.5);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-glassy:hover,
+.btn-glassy:focus {
+  background-color: rgba(0, 123, 255, 0.8);
+}
+/* QuarkUI.css */
+
+/* Gradient Border Button */
+
+/* Gradient Border Button */
+.btn-gradient-border {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #8b00ff);
+  border-image-slice: 1;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: border-width 0.3s ease-in-out;
+}
+
+.btn-gradient-border:hover,
+.btn-gradient-border:focus {
+  border-width: 8px;
+}
+/* QuarkUI.css */
+
+/* Galaxy Set */
+
+/* Galaxy Button */
+.btn-galaxy {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: radial-gradient(circle, #a3a3a3 20%, #000);
+  background-size: 200% 200%;
+  animation: galaxyAnimation 3s linear infinite;
+}
+
+@keyframes galaxyAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Dreamy Set */
+
+/* Dreamy Button */
+.btn-dreamy {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: 2px solid #a3a3a3;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-dreamy::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg);
+  opacity: 0;
+  animation: dreamyAnimation 2s ease-in-out infinite;
+}
+
+@keyframes dreamyAnimation {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) scale(1);
+  }
+}
 
 .bg-green{
     background:#5be37f;
