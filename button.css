@@ -5,6 +5,673 @@ Button CSS
 Egehan Eren Gunes
 
 */
+/* QuarkUI.css */
+
+/* Neon Button Set */
+
+/* Neon Button - Mavi */
+/* QuarkUI.css */
+
+/* Neon Button Set */
+
+/* Neon Button - Mavi */
+.btn-neon-blue {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-neon-blue:hover,
+.btn-neon-blue:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px #007bff, 0 0 40px #007bff, 0 0 60px #007bff, 0 0 80px #007bff;
+}
+
+/* Neon Button - Yeşil */
+.btn-neon-green {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00ff7f;
+  box-shadow: 0 0 10px #00ff7f, 0 0 20px #00ff7f, 0 0 30px #00ff7f, 0 0 40px #00ff7f;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-neon-green:hover,
+.btn-neon-green:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px #00ff7f, 0 0 40px #00ff7f, 0 0 60px #00ff7f, 0 0 80px #00ff7f;
+}
+
+/* Neon Button - Pembe */
+.btn-neon-pink {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff1493;
+  box-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493, 0 0 40px #ff1493;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-neon-pink:hover,
+.btn-neon-pink:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px #ff1493, 0 0 40px #ff1493, 0 0 60px #ff1493, 0 0 80px #ff1493;
+}
+
+/* Neon Button - Turuncu */
+.btn-neon-orange {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff4500;
+  box-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-neon-orange:hover,
+.btn-neon-orange:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px #ff4500, 0 0 40px #ff4500, 0 0 60px #ff4500, 0 0 80px #ff4500;
+}
+/* QuarkUI.css */
+
+/* Gradient Button Set */
+
+/* Gradient Button - Mavi */
+.btn-gradient-blue {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #007bff, #00bfff);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.btn-gradient-blue:hover,
+.btn-gradient-blue:focus {
+  background: linear-gradient(45deg, #00bfff, #007bff);
+  transform: scale(1.1);
+}
+
+/* Gradient Button - Yeşil */
+.btn-gradient-green {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #00ff7f, #32cd32);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.btn-gradient-green:hover,
+.btn-gradient-green:focus {
+  background: linear-gradient(45deg, #32cd32, #00ff7f);
+  transform: scale(1.1);
+}
+
+/* Gradient Button - Turuncu */
+.btn-gradient-orange {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff4500, #ff6347);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.btn-gradient-orange:hover,
+.btn-gradient-orange:focus {
+  background: linear-gradient(45deg, #ff6347, #ff4500);
+  transform: scale(1.1);
+}
+
+/* Gradient Button - Pembe */
+.btn-gradient-pink {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff1493, #ff69b4);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.btn-gradient-pink:hover,
+.btn-gradient-pink:focus {
+  background: linear-gradient(45deg, #ff69b4, #ff1493);
+  transform: scale(1.1);
+}
+/* QuarkUI.css */
+
+/* Shadow Button Set */
+
+/* Shadow Button - Mavi */
+.btn-shadow-blue {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-shadow-blue:hover,
+.btn-shadow-blue:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4);
+}
+
+/* Shadow Button - Yeşil */
+.btn-shadow-green {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00ff7f;
+  box-shadow: 0 4px 8px rgba(0, 255, 127, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-shadow-green:hover,
+.btn-shadow-green:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 255, 127, 0.4);
+}
+
+/* Shadow Button - Turuncu */
+.btn-shadow-orange {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff4500;
+  box-shadow: 0 4px 8px rgba(255, 69, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-shadow-orange:hover,
+.btn-shadow-orange:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 69, 0, 0.4);
+}
+
+/* Shadow Button - Pembe */
+.btn-shadow-pink {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff1493;
+  box-shadow: 0 4px 8px rgba(255, 20, 147, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-shadow-pink:hover,
+.btn-shadow-pink:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 20, 147, 0.4);
+}
+/* QuarkUI.css */
+
+/* Animated Pulse Button */
+
+/* Animated Pulse Button */
+.btn-animated-pulse {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff4500;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-animated-pulse::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 69, 0, 0.4);
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.btn-animated-pulse:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(2);
+  transition-delay: 0.1s;
+}
+
+.btn-animated-pulse:focus::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(2);
+}
+/* QuarkUI.css */
+
+/* Floating Gradient Button */
+
+/* Floating Gradient Button */
+.btn-floating-gradient {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff4500, #ff6347);
+  box-shadow: 0 6px 12px rgba(255, 69, 0, 0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-floating-gradient::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff4500, #ff6347);
+  border-radius: 50px;
+  opacity: 0.6;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.btn-floating-gradient:hover,
+.btn-floating-gradient:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 69, 0, 0.4);
+}
+
+.btn-floating-gradient:hover::before,
+.btn-floating-gradient:focus::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+/* QuarkUI.css */
+
+/* Flip Button */
+
+/* Flip Button */
+.btn-flip {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-flip::before,
+.btn-flip::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform-origin: 100% 50%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.btn-flip::before {
+  transform: perspective(30px) rotateY(90deg);
+  z-index: 1;
+}
+
+.btn-flip::after {
+  transform: perspective(30px) rotateY(0deg);
+  z-index: 2;
+}
+
+.btn-flip:hover::before {
+  transform: perspective(30px) rotateY(0deg);
+}
+
+.btn-flip:hover::after {
+  transform: perspective(30px) rotateY(-90deg);
+}
+/* QuarkUI.css */
+
+/* Rainbow Button */
+
+/* Rainbow Button */
+.btn-rainbow {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: linear-gradient(135deg, #ff1493, #ff4500, #ff6347, #ff7f50, #ffa500, #ffd700, #ff1493);
+  background-size: 600% 600%;
+  animation: rainbowAnimation 6s infinite;
+}
+
+@keyframes rainbowAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/* QuarkUI.css */
+
+/* Blob Button */
+
+/* Blob Button */
+.btn-blob {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ff4500;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-blob::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6347;
+  border-radius: 50%;
+  opacity: 0.8;
+  transform: translate(-50%, -50%) scale(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.btn-blob:hover::before,
+.btn-blob:focus::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(2);
+}
+/* QuarkUI.css */
+
+/* 3D Rotating Button */
+
+/* 3D Rotating Button */
+.btn-3d-rotate {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  position: relative;
+  perspective: 1000px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.btn-3d-rotate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform-origin: bottom;
+  transform: translateY(100%) rotateX(90deg);
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.btn-3d-rotate:hover::before,
+.btn-3d-rotate:focus::before {
+  transform: translateY(0) rotateX(0);
+}
+/* QuarkUI.css */
+
+/* Glowing Border Button */
+
+/* Glowing Border Button */
+.btn-glowing-border {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff4500;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glowing-border::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 3px solid #ff6347;
+  border-radius: 10px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-glowing-border:hover::before,
+.btn-glowing-border:focus::before {
+  opacity: 1;
+  transform: scale(1);
+}
+/* QuarkUI.css */
+
+/* Particle Burst Button */
+
+/* Particle Burst Button */
+.btn-particle-burst {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-particle-burst::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: burstAnimation 1s linear infinite;
+}
+
+@keyframes burstAnimation {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+
+.btn-particle-burst:hover::after,
+.btn-particle-burst:focus::after {
+  animation: burstAnimation 1s linear infinite;
+}
+/* QuarkUI.css */
+
+/* Sliding Gradient Button */
+
+/* Sliding Gradient Button */
+.btn-sliding-gradient {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #007bff, #00bfff);
+  background-size: 200% 200%;
+  background-position: 100% 100%;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.btn-sliding-gradient:hover,
+.btn-sliding-gradient:focus {
+  background-position: 0% 0%;
+}
+/* QuarkUI.css */
+
+/* 5D Glitch Button */
+
+/* 5D Glitch Button */
+.btn-5d-glitch {
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff4500;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-5d-glitch::before,
+.btn-5d-glitch::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6347;
+  opacity: 0.8;
+  transform: scale(1);
+  z-index: -1;
+}
+
+.btn-5d-glitch::before {
+  animation: glitchAnimation1 1s infinite;
+}
+
+.btn-5d-glitch::after {
+  animation: glitchAnimation2 1s infinite;
+}
+
+@keyframes glitchAnimation1 {
+  0% {
+    transform: scale(1);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  }
+  25% {
+    transform: scale(1.1);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  }
+  50% {
+    transform: scale(1);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  }
+  75% {
+    transform: scale(1.2);
+    clip-path: polygon(5% 5%, 5% 95%, 95% 95%, 95% 5%);
+  }
+  100% {
+    transform: scale(1);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  }
+}
+
+@keyframes glitchAnimation2 {
+  0% {
+    transform: scale(1);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  25% {
+    transform: scale(1.2);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  50% {
+    transform: scale(1);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  75% {
+    transform: scale(1.1);
+    clip-path: polygon(5% 5%, 95% 5%, 95% 95%, 5% 95%);
+  }
+  100% {
+    transform: scale(1);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+.btn-5d-glitch:hover::before,
+.btn-5d-glitch:focus::before,
+.btn-5d-glitch:hover::after,
+.btn-5d-glitch:focus::after {
+  animation: none;
+  opacity: 1;
+}
+
 .bg-green{
     background:#5be37f;
 }
