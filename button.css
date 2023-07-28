@@ -5,6 +5,92 @@ Button CSS
 Egehan Eren Gunes
 
 */
+.line-button {
+    background-color: transparent;
+    color: #000;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .line-button:hover {
+    transform: translateY(-2px);
+  }
+/* Kabartmalı Button */
+.embossed-button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .embossed-button:hover {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+/* Gece Gündüz Button */
+.day-night-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .day-night-button::before {
+    content: '☀️';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease;
+  }
+  
+  .day-night-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .day-night-button:hover::before {
+    opacity: 0;
+  }
+  
+  .day-night-button.night-mode::before {
+    content: '🌙';
+    opacity: 0;
+  }
+  
+  .day-night-button.night-mode:hover::before {
+    opacity: 1;
+  }
+/* İkonlu Button */
+.icon-button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon-button:hover {
+    background-color: #2ecc71;
+  }
+
 .frame-button {
     background-color: transparent;
     color: #3498db;
