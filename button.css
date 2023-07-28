@@ -1718,6 +1718,18 @@ Egehan Eren Gunes
     padding:16px;
     font-size:16px;
 }
+.btn-green-outlined{
+    border: 2px solid #5be37f;
+    background:white;
+    border-radius:4px;
+    transition:0.2s;
+    cursor:pointer;
+    text-decoration:none;
+    color:#5be37f;
+    font-family:verdana;
+    padding:16px;
+    font-size:16px;
+}
 .btn-pink{
     border: 2px solid #ed6fc3;
     background:#ed6fc3;
@@ -1778,6 +1790,18 @@ Egehan Eren Gunes
     padding:16px;
     font-size:16px; 
 }
+.btn-pink-outlined{
+    border: 2px solid #ed6fc3;
+    background:white;
+    border-radius:4px;
+    transition:0.2s;
+    cursor:pointer;
+    text-decoration:none;
+    color:#ed6fc3;
+    font-family:verdana;
+    padding:16px;
+    font-size:16px;
+}
 .btn-black{
     border: 2px solid #15171c;
     background:#15171c;
@@ -1827,6 +1851,18 @@ Egehan Eren Gunes
     font-size:16px;
 }
 .btn-black-fc:focus{
+    border: 2px solid #15171c;
+    background:white;
+    border-radius:4px;
+    transition:0.2s;
+    cursor:pointer;
+    text-decoration:none;
+    color:#15171c;
+    font-family:verdana;
+    padding:16px;
+    font-size:16px;
+}
+.btn-black-outlined{
     border: 2px solid #15171c;
     background:white;
     border-radius:4px;
@@ -1898,6 +1934,18 @@ Egehan Eren Gunes
     padding:16px;
     font-size:16px;
 }
+.btn-red-outlined{
+    border: 2px solid #ed634e;
+    background:white;
+    border-radius:4px;
+    transition:0.2s;
+    cursor:pointer;
+    text-decoration:none;
+    color:#ed634e;
+    font-family:verdana;
+    padding:16px;
+    font-size:16px;
+}
 .btn-orange{
     border: 2px solid #e6a863;
     background:#e6a863;
@@ -1947,6 +1995,18 @@ Egehan Eren Gunes
     font-size:16px;
 }
 .btn-orange-fc:focus{
+    border: 2px solid #e6a863;
+    background:white;
+    border-radius:4px;
+    transition:0.2s;
+    cursor:pointer;
+    text-decoration:none;
+    color:#e6a863;
+    font-family:verdana;
+    padding:16px;
+    font-size:16px;
+}
+.btn-orange-outlined{
     border: 2px solid #e6a863;
     background:white;
     border-radius:4px;
@@ -2018,6 +2078,18 @@ Egehan Eren Gunes
     padding:16px;
     font-size:16px;
 }
+.btn-purple-outlined{
+    border: 2px solid #7070e6;
+    background:white;
+    border-radius:4px;
+    transition:0.2s;
+    cursor:pointer;
+    text-decoration:none;
+    color:#7070e6;
+    font-family:verdana;
+    padding:16px;
+    font-size:16px;
+}
 .btn-blue{
     border: 2px solid #5d96f0;
     background:#5d96f0;
@@ -2067,6 +2139,18 @@ Egehan Eren Gunes
     font-size:16px;
 }
 .btn-blue-fc:focus{
+    border: 2px solid #5d96f0;
+    background:white;
+    border-radius:4px;
+    transition:0.2s;
+    cursor:pointer;
+    text-decoration:none;
+    color:#5d96f0;
+    font-family:verdana;
+    padding:16px;
+    font-size:16px;
+}
+.btn-blue-outlined{
     border: 2px solid #5d96f0;
     background:white;
     border-radius:4px;
