@@ -2152,6 +2152,81 @@ Egehan Eren Gunes
     padding:16px;
     font-size:16px;
 }
+.rounded-5{
+    border-radius:5px;
+}
+.rounded-5-hv{
+    border-radius:none;
+}
+.rounded-5-hv:hover{
+    border-radius:5px;
+}
+.rounded-5-fc{
+    border-radius:none;
+}
+.rounded-5-fc:focus{
+    border-radius:5px;
+}
+.rounded-10{
+    border-radius:10px;
+}
+.rounded-10-hv{
+    border-radius:none;
+}
+.rounded-10-hv:hover{
+    border-radius:10px;
+}
+.rounded-10-fc{
+    border-radius:none;
+}
+.rounded-10-fc:focus{
+    border-radius:10px;
+}
+.rounded-15{
+    border-radius:15px;
+}
+.rounded-15-hv{
+    border-radius:none;
+}
+.rounded-15-hv:hover{
+    border-radius:15px;
+}
+.rounded-15-fc{
+    border-radius:none;
+}
+.rounded-15-fc:focus{
+    border-radius:15px;
+}
+.rounded-20{
+    border-radius:20px;
+}
+.rounded-20-hv{
+    border-radius:none;
+}
+.rounded-20-hv:hover{
+    border-radius:20px;
+}
+.rounded-20-fc{
+    border-radius:none;
+}
+.rounded-20-fc:focus{
+    border-radius:20px;
+}
+.rounded-25{
+    border-radius:25px;
+}
+.rounded-25-hv{
+    border-radius:none;
+}
+.rounded-25-hv:hover{
+    border-radius:25px;
+}
+.rounded-25-fc{
+    border-radius:none;
+}
+.rounded-25-fc:focus{
+    border-radius:25px;
+}
 .rounded{
     border-radius:25px;
 }
