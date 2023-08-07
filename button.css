@@ -5,6 +5,1264 @@ Button CSS
 Egehan Eren Gunes
 
 */
+  .btn-gradient-wave {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6);
+    background-size: 200% 200%;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-gradient-wave:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    animation: gradientWave 3s infinite;
+  }
+  
+  @keyframes gradientWave {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .btn-pulsating-gradient {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 18px;
+    background: linear-gradient(-45deg, #3498db, #e74c3c, #9b59b6);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    animation: pulsate 2s infinite;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-pulsating-gradient:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  @keyframes pulsate {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
+  .btn-starry-night {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-starry-night::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    background-image: radial-gradient(white 10%, transparent 70%);
+    opacity: 0.5;
+    z-index: -1;
+    animation: starryNight 4s infinite linear alternate-reverse;
+  }
+  
+  .btn-starry-night:hover {
+    transform: scale(1.05);
+    background-color: #000;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  @keyframes starryNight {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-2px, 2px);
+    }
+    50% {
+      transform: translate(2px, -2px);
+    }
+    75% {
+      transform: translate(-2px, -2px);
+    }
+  }
+  
+  .btn-neon-pulse {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-neon-pulse::before,
+  .btn-neon-pulse::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: rgba(0, 255, 255, 0.3);
+    opacity: 0.3;
+    animation: neonPulse 2s infinite ease-in-out alternate-reverse;
+  }
+  
+  .btn-neon-pulse::before {
+    z-index: -1;
+    filter: blur(20px);
+  }
+  
+  .btn-neon-pulse:hover {
+    transform: scale(1.05);
+    background-color: #000;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  @keyframes neonPulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  .btn-classic-s-green{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .btn-classic-s-green::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    opacity: 1;
+    z-index: -1;
+    transition: opacity 0.3s;
+  }
+  
+  .btn-classic-s-green:hover::before {
+    opacity: 0;
+  }
+  
+  .btn-classic-s-green:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(46, 204, 113, 0.5);
+  }
+  
+  .btn-vibrating-border {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .btn-vibrating-border::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    z-index: -1;
+    animation: vibratingBorder 1s infinite linear alternate-reverse;
+  }
+  
+  .btn-vibrating-border:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(231, 76, 60, 0.5);
+  }
+  
+  @keyframes vibratingBorder {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-2px, 2px);
+    }
+    50% {
+      transform: translate(2px, -2px);
+    }
+    75% {
+      transform: translate(-2px, -2px);
+    }
+  }
+  
+  .btn-glitch-effect {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .btn-glitch-effect::before,
+  .btn-glitch-effect::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e74c3c;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transform: translate(4px, 4px);
+    opacity: 0.8;
+    z-index: -1;
+    animation: glitch 2s infinite linear alternate-reverse;
+  }
+  
+  .btn-glitch-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(52, 152, 219, 0.5);
+  }
+  
+  @keyframes glitch {
+    0%, 100% {
+      transform: translate(4px, 4px);
+    }
+    25% {
+      transform: translate(-4px, -4px);
+    }
+    50% {
+      transform: translate(2px, -2px);
+    }
+    75% {
+      transform: translate(-2px, 2px);
+    }
+  }
+  
+  .btn-fluid-motion {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .btn-fluid-motion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #3498db;
+    opacity: 0.2;
+    transform: skewX(45deg);
+    z-index: -1;
+    animation: fluidMotion 4s infinite;
+  }
+  
+  .btn-fluid-motion:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(46, 204, 113, 0.5);
+  }
+  
+  @keyframes fluidMotion {
+    0%, 100% {
+      left: -100%;
+    }
+    50% {
+      left: 100%;
+    }
+  }
+  
+  .btn-rainbow-pulse {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .btn-rainbow-pulse::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #f06, #f39c12, #2ecc71, #3498db, #9b59b6, #e74c3c);
+    opacity: 0.4;
+    z-index: -1;
+    animation: rainbowPulse 2s linear infinite;
+  }
+  
+  .btn-rainbow-pulse:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(52, 152, 219, 0.5);
+  }
+  
+  @keyframes rainbowPulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .btn-mystical-glow {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #9b59b6;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .btn-mystical-glow::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: #3498db;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s;
+  }
+  
+  .btn-mystical-glow:hover::before {
+    opacity: 1;
+  }
+  
+  .btn-mystical-glow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(52, 152, 219, 0.5);
+  }
+  
+  .btn-morphing {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .btn-morphing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0.2);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .btn-morphing:hover::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .btn-morphing:hover {
+    transform: rotate(360deg) scale(1.2);
+    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.4);
+    background-color: #9b59b6;
+  }
+  
+  .btn-dynamic-gradient {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6);
+    background-size: 200% 200%;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-position 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-dynamic-gradient::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .btn-dynamic-gradient:hover::before {
+    opacity: 1;
+  }
+  
+  .btn-dynamic-gradient:hover {
+    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.4);
+    background-position: right bottom;
+  }
+  
+  .btn-squishy {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-squishy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .btn-squishy:hover::before {
+    opacity: 1;
+  }
+  
+  .btn-squishy:active {
+    transform: scale(0.9);
+  }
+  
+  .btn-squishy:active::before {
+    opacity: 0;
+  }
+  
+  .btn-squishy:hover {
+    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.4);
+  }
+  
+  .btn-classic-s{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-classic-s::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background: radial-gradient(circle, #f06, transparent 60%);
+    animation: particleExplosion 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: scale(0);
+    z-index: -1;
+  }
+  
+  .btn-classic-s:hover::before {
+    transform: scale(2);
+    opacity: 0;
+  }
+  
+  .btn-classic-s:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(231, 76, 60, 0.4);
+  }
+  
+  @keyframes particleExplosion {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  .btn-floating-glitter {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-floating-glitter::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background: radial-gradient(circle, #f06, transparent 80%);
+    animation: floatingGlitter 4s linear infinite;
+  }
+  
+  .btn-floating-glitter:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.4);
+  }
+  
+  @keyframes floatingGlitter {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-10px, -10px);
+    }
+    50% {
+      transform: translate(10px, -10px);
+    }
+    75% {
+      transform: translate(-10px, 10px);
+    }
+  }
+  
+  .btn-classic {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-classic::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(231, 76, 60, 0.7);
+    z-index: -1;
+    animation: danceShadows 3s ease-in-out infinite;
+  }
+  
+  .btn-classic:hover {
+    background-color: #c0392b;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.5);
+  }
+  
+  @keyframes danceShadows {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(5px, -5px);
+    }
+    50% {
+      transform: translate(0, 0);
+    }
+    75% {
+      transform: translate(-5px, 5px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .btn-blinking-text {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-blinking-text::before {
+    content: 'Blinking Text Button';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .btn-blinking-text:hover::before {
+    opacity: 1;
+    animation: blinkText 1s linear infinite;
+  }
+  
+  @keyframes blinkText {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .btn-blinking-text:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+  }
+  
+  .btn-rotating-border {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+  }
+  
+  .btn-rotating-border::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: inherit;
+    border: 2px solid #3498db;
+    z-index: -1;
+    animation: rotateBorder 3s linear infinite;
+  }
+  
+  .btn-rotating-border:hover {
+    color: #fff;
+    animation: rotateText 3s linear infinite;
+  }
+  
+  @keyframes rotateText {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotateBorder {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .btn-moving-bg {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+  }
+  
+  .btn-moving-bg::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background: linear-gradient(45deg, #e74c3c, #f39c12, #3498db, #2ecc71, #9b59b6, #e74c3c);
+    z-index: -1;
+    animation: moveBackground 5s linear infinite;
+  }
+  
+  .btn-moving-bg:hover {
+    color: #fff;
+  }
+  
+  @keyframes moveBackground {
+    0% {
+      transform: translate(-50px, -50px);
+    }
+    100% {
+      transform: translate(50px, 50px);
+    }
+  }
+  
+  
+  .btn-fading-text {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-fading-text::before {
+    content: 'Fading Text Button';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .btn-fading-text:hover::before {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  
+  .btn-fading-text:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+  }
+  
+  .btn-rainbow-border {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+  }
+  
+  .btn-rainbow-border::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #e74c3c, #f39c12, #3498db, #2ecc71, #9b59b6, #e74c3c);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .btn-rainbow-border:hover {
+    color: #fff;
+  }
+  
+  .btn-rainbow-border:hover::before {
+    opacity: 1;
+    animation: rainbowBorder 3s linear infinite;
+  }
+  
+  @keyframes rainbowBorder {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  .btn-spinning-heart {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.5s, box-shadow 0.3s;
+  }
+  
+  .btn-spinning-heart::before {
+    content: '\2764';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    line-height: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-spinning-heart:hover {
+    background-color: #c0392b;
+    animation: spinHeart 1s infinite linear;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.5);
+  }
+  
+  @keyframes spinHeart {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .btn-ripple {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-ripple:hover {
+    animation: ripple 1s ease-out infinite;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+  }
+  
+  .btn-color-changing {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #9b59b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.5s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-color-changing:hover {
+    animation: colorChange 3s infinite;
+    box-shadow: 0 0 20px rgba(155, 89, 182, 0.5);
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-color: #9b59b6;
+    }
+    25% {
+      background-color: #3498db;
+    }
+    50% {
+      background-color: #27ae60;
+    }
+    75% {
+      background-color: #f39c12;
+    }
+    100% {
+      background-color: #e74c3c;
+    }
+  }
+  
+  .btn-swinging {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-swinging:hover {
+    background-color: #c0392b;
+    animation: swing 1.5s ease-in-out infinite alternate;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.5);
+  }
+  
+  @keyframes swing {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+  }
+  
+  .btn-pulsing {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-pulsing:hover {
+    background-color: #d35400;
+    animation: pulse 1.5s ease-in-out infinite alternate;
+    box-shadow: 0 0 20px rgba(230, 126, 34, 0.5);
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  
+  .btn-bouncing {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-bouncing:hover {
+    background-color: #2980b9;
+    animation: bounce 1s infinite;
+    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.5);
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .btn-floating {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #9b59b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-floating:hover {
+    background-color: #8e44ad;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 20px 40px rgba(155, 89, 182, 0.5);
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .btn-glowing {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-glowing:hover {
+    background-color: #d68910;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    box-shadow: 0 0 20px rgba(243, 156, 18, 0.5);
+  }
+  
+  @keyframes glow {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 20px rgba(243, 156, 18, 0.5);
+    }
+    100% {
+      transform: scale(1.1);
+      box-shadow: 0 0 40px rgba(243, 156, 18, 0.9);
+    }
+  }
+  
+  .btn-pulsating {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-pulsating:hover {
+    background-color: #219653;
+    animation: pulsate 1s ease-out infinite;
+    box-shadow: 0 0 20px rgba(33, 150, 83, 0.5);
+  }
+  
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  .btn-rotating {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.5s;
+  }
+  
+  .btn-rotating:hover {
+    background-color: #c0392b;
+    animation: rotate 2s infinite linear;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .btn-havadar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-havadar:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .btn-havadar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: skewX(-30deg);
+    transition: transform 0.3s;
+  }
+  
+  .btn-havadar:hover::before {
+    transform: translateX(100%) skewX(-30deg);
+  }
+  
 .btn-neon-blue {
   font-size: 18px;
   color: #fff;
