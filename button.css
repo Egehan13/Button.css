@@ -4,7 +4,241 @@ Button CSS
 
 Egehan Eren Gunes
 
-*/
+*/ 
+  .btn-ripple {
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #9b59b6;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-ripple:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    opacity: 0;
+  }
+  
+  .btn-ripple:hover {
+    background-color: #8e44ad;
+  }
+  
+  .btn-ripple:hover:before {
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    transition: width 0.4s ease-out, height 0.4s ease-out, opacity 0.3s ease-out;
+  }
+  
+  .btn-wave {
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #27ae60;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-wave:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
+  
+  .btn-wave:hover {
+    background-color: #219653;
+    transform: translateX(5px);
+  }
+  
+  .btn-wave:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .btn-spin {
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 50px;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.4s, background-color 0.4s, box-shadow 0.4s;
+  }
+  
+  .btn-spin:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c0392b;
+    transform: translateZ(-2px);
+    transition: transform 0.4s;
+    z-index: -1;
+  }
+  
+  .btn-spin:hover {
+    transform: scale(1.05) rotateX(360deg);
+    background-color: #c0392b;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .btn-spin:hover:before {
+    transform: translateZ(-30px);
+  }
+  
+    .btn-clock {
+      position: relative;
+      display: inline-block;
+      padding: 15px 35px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(135deg, #ff9f01, #ffbf06);
+      border: none;
+      border-radius: 50px;
+      overflow: hidden;
+      z-index: 1;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .btn-clock:before,
+    .btn-clock:after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      width: 100%;
+      height: 120%;
+      background: linear-gradient(135deg, #ff9f01, #ffbf06);
+      transform: skewY(45deg);
+      transition: transform 0.3s, background-color 0.3s;
+      z-index: -1;
+    }
+
+    .btn-clock:before {
+      left: 50%;
+      transform-origin: bottom left;
+    }
+
+    .btn-clock:after {
+      left: -110%;
+      transform-origin: bottom right;
+    }
+
+    .btn-clock:hover {
+      transform: scale(1.05);
+      background-color: #ffbf06;
+    }
+
+    .btn-clock:hover:before,
+    .btn-clock:hover:after {
+      transform: skewY(0deg) scaleX(2);
+    }
+.btn-minecraft{
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color: #008542;
+    color: #fff;
+    text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 0;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: unset;
+    padding: .8rem 1.5rem;
+    text-decoration: none;
+    font-weight: 900;
+    transition: all 0.7s cubic-bezier(0,.8,.26,.99);
+   }
+   
+   .btn-minecraft:before {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    transition: .7s cubic-bezier(0,.8,.26,.99);
+    z-index: -1;
+    background-color: #008542!important;
+    box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+   }
+   
+   .btn-minecraft:after {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+    transition: .7s cubic-bezier(0,.8,.26,.99);
+   }
+   
+   .btn-minecraft:hover:before {
+    box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+   }
+   
+   .btn-minecraft:hover:after {
+    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
+   }
+   
+   .btn-minecraft:active {
+    transform: translateY(4px);
+   }
+   
+   .btn-minecraft:active:after {
+    box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
+   }
   .btn-slide {
     position: relative;
     display: inline-block;
@@ -325,7 +559,7 @@ Egehan Eren Gunes
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #e74c3c, #3498db);
+    background: linear-gradient(90deg, #83c6f2, #3498db);
     opacity: 0.5;
     transition: left 0.5s ease-in-out;
   }
@@ -1286,37 +1520,6 @@ Egehan Eren Gunes
       transform: rotate(360deg);
     }
   }
-  
-  .btn-ripple {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .btn-ripple:hover {
-    animation: ripple 1s ease-out infinite;
-    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
-  }
-  
-  @keyframes ripple {
-    0% {
-      transform: scale(1);
-      opacity: 0.5;
-    }
-    100% {
-      transform: scale(1.3);
-      opacity: 0;
-    }
-  }
-  
   .btn-color-changing {
     display: inline-block;
     padding: 10px 20px;
@@ -2252,782 +2455,6 @@ Egehan Eren Gunes
 .btn-5d-glitch:focus::after {
   animation: none;
   opacity: 1;
-}
-/* QuarkUI.css */
-
-/* Glittering Star Button */
-
-/* Glittering Star Button */
-.btn-glittering-star {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #007bff;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-glittering-star::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background-color: #fff;
-  opacity: 0;
-  transform: rotate(45deg);
-  animation: glitterAnimation 1.5s ease-in-out infinite;
-}
-
-@keyframes glitterAnimation {
-  0% {
-    opacity: 0;
-    transform: rotate(45deg) scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: rotate(45deg) scale(2);
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(45deg) scale(1);
-  }
-}
-
-.btn-glittering-star:hover::after,
-.btn-glittering-star:focus::after {
-  animation: glitterAnimation 1.5s ease-in-out infinite;
-}
-/* QuarkUI.css */
-
-/* Raindrop Button */
-
-/* Raindrop Button */
-.btn-raindrop {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #00bfff;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-raindrop::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 0;
-  animation: raindropAnimation 1s ease-in-out infinite;
-}
-
-@keyframes raindropAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    opacity: 0.8;
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-.btn-raindrop:hover::after,
-.btn-raindrop:focus::after {
-  animation: raindropAnimation 1s ease-in-out infinite;
-}
-/* QuarkUI.css */
-
-/* Pulse Border Button */
-
-/* Pulse Border Button */
-.btn-pulse-border {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: 2px solid #007bff;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: transparent;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-pulse-border::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #007bff;
-  border-radius: 5px;
-  opacity: 0;
-  transform: scale(1);
-  animation: pulseBorderAnimation 1.5s ease-in-out infinite;
-}
-
-@keyframes pulseBorderAnimation {
-  0% {
-    opacity: 0;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1);
-  }
-}
-
-.btn-pulse-border:hover::before,
-.btn-pulse-border:focus::before {
-  animation: pulseBorderAnimation 1.5s ease-in-out infinite;
-}
-/* QuarkUI.css */
-
-/* Rainbow Gradient Button */
-
-/* Rainbow Gradient Button */
-.btn-rainbow-gradient {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background: linear-gradient(135deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #8b00ff);
-  background-size: 600% 600%;
-  animation: rainbowGradientAnimation 8s ease-in-out infinite;
-}
-
-@keyframes rainbowGradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-/* QuarkUI.css */
-
-/* Liquid Button */
-
-/* Liquid Button */
-.btn-liquid {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: #007bff;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-liquid::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  animation: liquidAnimation 2s linear infinite;
-}
-
-@keyframes liquidAnimation {
-  0% {
-    transform: translate(-50%, -50%) scale(0);
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(0);
-  }
-}
-
-.btn-liquid:hover::before,
-.btn-liquid:focus::before {
-  animation: liquidAnimation 2s linear infinite;
-}
-/* QuarkUI.css */
-
-/* Glassy Button */
-
-/* Glassy Button */
-.btn-glassy {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: rgba(0, 123, 255, 0.5);
-  backdrop-filter: blur(10px);
-  transition: background-color 0.3s ease-in-out;
-}
-
-.btn-glassy:hover,
-.btn-glassy:focus {
-  background-color: rgba(0, 123, 255, 0.8);
-}
-/* QuarkUI.css */
-
-/* Gradient Border Button */
-
-/* Gradient Border Button */
-.btn-gradient-border {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: 2px solid;
-  border-image: linear-gradient(135deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #8b00ff);
-  border-image-slice: 1;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: transparent;
-  transition: border-width 0.3s ease-in-out;
-}
-
-.btn-gradient-border:hover,
-.btn-gradient-border:focus {
-  border-width: 8px;
-}
-/* QuarkUI.css */
-
-/* Galaxy Set */
-
-/* Galaxy Button */
-.btn-galaxy {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background: radial-gradient(circle, #a3a3a3 20%, #000);
-  background-size: 200% 200%;
-  animation: galaxyAnimation 3s linear infinite;
-}
-
-@keyframes galaxyAnimation {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
-/* Dreamy Set */
-
-/* Dreamy Button */
-.btn-dreamy {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: 2px solid #a3a3a3;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #007bff;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-dreamy::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: rotate(45deg);
-  opacity: 0;
-  animation: dreamyAnimation 2s ease-in-out infinite;
-}
-
-@keyframes dreamyAnimation {
-  0% {
-    opacity: 0;
-    transform: rotate(45deg) scale(1);
-  }
-  50% {
-    opacity: 0.5;
-    transform: rotate(45deg) scale(1.2);
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(45deg) scale(1);
-  }
-}
-/* QuarkUI.css */
-
-/* Sakura Set */
-
-/* Sakura Button */
-.btn-sakura {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #ff85ad;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-sakura::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  opacity: 0;
-  animation: sakuraAnimation 2s ease-in-out infinite;
-}
-
-@keyframes sakuraAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0);
-  }
-  50% {
-    opacity: 0.8;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0);
-  }
-}
-
-.btn-sakura:hover::before,
-.btn-sakura:focus::before {
-  animation: sakuraAnimation 2s ease-in-out infinite;
-}
-
-/* Firefly Set */
-
-/* Firefly Button */
-.btn-firefly {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: 2px solid #a3a3a3;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: #007bff;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
-}
-
-.btn-firefly::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  opacity: 0;
-  animation: fireflyAnimation 2s ease-in-out infinite;
-}
-
-@keyframes fireflyAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0);
-  }
-  50% {
-    opacity: 0.8;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0);
-  }
-}
-
-.btn-firefly:hover::after,
-.btn-firefly:focus::after {
-  animation: fireflyAnimation 2s ease-in-out infinite;
-}
-/* QuarkUI.css */
-
-/* Rainy Day Set */
-
-/* Rainy Day Button */
-.btn-rainy-day {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #a3a3a3;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-rainy-day::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -50%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: rotate(45deg);
-  opacity: 0;
-  animation: rainyDayAnimation 2s ease-in-out infinite;
-}
-
-@keyframes rainyDayAnimation {
-  0% {
-    opacity: 0;
-    transform: rotate(45deg) translateY(-50%);
-  }
-  50% {
-    opacity: 0.5;
-    transform: rotate(45deg) translateY(-20%);
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(45deg) translateY(-50%);
-  }
-}
-
-.btn-rainy-day:hover::before,
-.btn-rainy-day:focus::before {
-  animation: rainyDayAnimation 2s ease-in-out infinite;
-}
-
-/* Luminous Set */
-
-/* Luminous Button */
-.btn-luminous {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: 2px solid #007bff;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: #007bff;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-luminous::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  opacity: 0;
-  animation: luminousAnimation 2s ease-in-out infinite;
-}
-
-@keyframes luminousAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0);
-  }
-  50% {
-    opacity: 0.8;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0);
-  }
-}
-
-.btn-luminous:hover::after,
-.btn-luminous:focus::after {
-  animation: luminousAnimation 2s ease-in-out infinite;
-}
-/* QuarkUI.css */
-
-/* Ocean Wave Set */
-
-/* Ocean Wave Button */
-.btn-ocean-wave {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background: linear-gradient(45deg, #007bff, #00a3ff, #00e0ff, #00ffc4);
-  background-size: 200% 200%;
-  animation: oceanWaveAnimation 3s linear infinite;
-}
-
-@keyframes oceanWaveAnimation {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
-/* Starlight Set */
-
-/* Starlight Button */
-.btn-starlight {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: 2px solid #007bff;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: #000;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-starlight::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -50%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  transform: rotate(45deg);
-  opacity: 0;
-  animation: starlightAnimation 2s ease-in-out infinite;
-}
-
-@keyframes starlightAnimation {
-  0% {
-    opacity: 0;
-    transform: rotate(45deg) translateY(-50%);
-  }
-  50% {
-    opacity: 0.5;
-    transform: rotate(45deg) translateY(-20%);
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(45deg) translateY(-50%);
-  }
-}
-
-.btn-starlight:hover::before,
-.btn-starlight:focus::before {
-  animation: starlightAnimation 2s ease-in-out infinite;
-}
-/* QuarkUI.css */
-
-/* Galactic Set */
-
-/* Galactic Button */
-.btn-galactic {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #000;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-galactic::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -50%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  opacity: 0;
-  animation: galacticAnimation 2s ease-in-out infinite;
-}
-
-@keyframes galacticAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0);
-  }
-  50% {
-    opacity: 0.8;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0);
-  }
-}
-
-.btn-galactic:hover::before,
-.btn-galactic:focus::before {
-  animation: galacticAnimation 2s ease-in-out infinite;
-}
-
-/* Frosty Set */
-
-/* Frosty Button */
-.btn-frosty {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: 2px solid #a3a3a3;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #007bff;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-frosty::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: rotate(45deg);
-  opacity: 0;
-  animation: frostyAnimation 2s ease-in-out infinite;
-}
-
-@keyframes frostyAnimation {
-  0% {
-    opacity: 0;
-    transform: rotate(45deg) translateY(-50%);
-  }
-  50% {
-    opacity: 0.5;
-    transform: rotate(45deg) translateY(-20%);
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(45deg) translateY(-50%);
-  }
-}
-
-.btn-frosty:hover::before,
-.btn-frosty:focus::before {
-  animation: frostyAnimation 2s ease-in-out infinite;
-}
-/* QuarkUI.css */
-
-/* Pastel Set */
-
-/* Pastel Button */
-.btn-pastel {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background: linear-gradient(135deg, #ffb6b9, #fae3d9, #b8b8f3);
-  background-size: 200% 200%;
-  animation: pastelAnimation 3s linear infinite;
-}
-
-@keyframes pastelAnimation {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
-/* Glitch Set */
-
-/* Glitch Button */
-.btn-glitch {
-  font-size: 18px;
-  color: #fff;
-  padding: 12px 24px;
-  border: 2px solid #007bff;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #000;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-glitch::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: translate(-50%, -50%) rotate(45deg) scale(0);
-  opacity: 0;
-  animation: glitchAnimation 2s ease-in-out infinite;
-}
-
-@keyframes glitchAnimation {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) rotate(45deg) scale(0);
-  }
-  50% {
-    opacity: 0.5;
-    transform: translate(-50%, -50%) rotate(45deg) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) rotate(45deg) scale(0);
-  }
-}
-
-.btn-glitch:hover::before,
-.btn-glitch:focus::before {
-  animation: glitchAnimation 2s ease-in-out infinite;
 }
 
 .bg-green{
